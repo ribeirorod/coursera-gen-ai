@@ -22,3 +22,19 @@ While larger models are good at zero-shot inference, smaller models often benefi
 The scale of the model plays a significant role in its performance. Larger models with more parameters capture a better understanding of language and are surprisingly good at zero-shot inference. In contrast, smaller models are generally only good at tasks similar to those they were trained on.
 
 Finally, once I've found a suitable model, there are several configuration settings I can experiment with to influence the structure and style of the completions the model generates.
+
+# Generative configuration | at inference time
+
+**Configuration Parameters**: These are distinct from training parameters and are invoked at inference time to control aspects like the maximum number of tokens in the completion and the creativity of the output.
+
+1. **Max New Tokens**: This parameter limits the number of tokens that the model will generate. It's essentially a cap on the number of times the model will go through the selection process. 
+
+2. **Greedy Decoding**: By default, most large language models operate with greedy decoding, always choosing the word with the highest probability. However, this method can lead to repeated words or sequences.
+
+3. **Random Sampling**: To introduce variability and avoid repetition, random sampling can be used. The model chooses an output word at random using the probability distribution to weight the selection.
+
+4. **Top K and Top P Sampling**: These techniques limit the random sampling and increase the chance that the output will make sense. With top k, the model is restricted to choose from only the k tokens with the highest probability. With top p, the model is limited to predictions whose combined probabilities do not exceed p.
+
+5. **Temperature**: This parameter influences the shape of the probability distribution for the next token. A higher temperature results in higher randomness and a lower temperature results in lower randomness.
+
+After exploring these concepts, I've gained a deeper understanding of how to get the best possible performance out of these models using prompt engineering and by experimenting with different inference configuration parameters. Now, I'm prepared to start thinking about the steps required to develop and launch a language model-powered application.
