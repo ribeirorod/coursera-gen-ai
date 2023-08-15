@@ -1,4 +1,4 @@
-## Introduction to Large Language Models (LLMs)
+# Introduction to Large Language Models (LLMs)
 The course is primarily about large language models, their use cases, and how they work. LLMs are a subset of traditional machine learning that have been trained on trillions of words, finding statistical patterns in massive datasets of human-generated content. These models, with billions of parameters, exhibit emergent properties beyond just language comprehension.
 
 ## Generative AI
@@ -19,7 +19,24 @@ Interaction with language models is different than other machine learning and pr
 ## Prompt Engineering
 The space available to the prompt is called the context window. Inference refers to the process of using the model to generate text. The output is known as a completion, which includes both the original prompt and the generated text.
 
-## Example
-An example was given where the model was asked where Ganymede is located in the solar system. The model correctly identified Ganymede as a moon of Jupiter and generated a reasonable answer stating that the moon is located within Jupiter's orbit.
+# Use Cases for Large Language Models (LLMs)
 
-Throughout the course, you will see many examples of prompts and completions, learn how these models are built and trained, how to fine-tune them for your use cases, and how to deploy them to solve business and social tasks.
+## Text Generation
+While LLMs are commonly associated with chatbots, they're capable of a wide variety of text generation tasks. For instance, they can write an essay based on a given prompt or summarize conversations provided in the form of dialogue.
+
+## Translation Tasks
+LLMs can be used for a range of translation tasks. This includes traditional language translations such as French to German or English to Spanish, as well as translating natural language into machine code. For example, you could ask a model to generate Python code that calculates the mean of every column in a DataFrame.
+
+## Information Retrieval
+LLMs can also execute smaller, focused tasks like information retrieval. An example of this is named entity recognition, where the model identifies all people and places mentioned in a news article.
+
+## Augmenting LLMs with External Data Sources
+An area of active development involves augmenting LLMs by connecting them to external data sources or using them to invoke external APIs. This allows the model to access information it doesn't have from its pre-training and interact with the real world.
+
+## Increased Understanding with Larger Models
+As the scale of foundation models increases from hundreds of millions of parameters to billions, the subjective understanding of language that a model possesses also increases. This improved understanding enables the model to process, reason, and solve more complex tasks.
+
+## Fine-tuning Smaller Models
+Smaller models can be fine-tuned to perform well on specific tasks. The course will cover more on how to do this in week 2.
+
+The rapid increase in capability exhibited by LLMs in recent years is largely due to the architecture that powers them. More about this will be covered in the next section of the course.
