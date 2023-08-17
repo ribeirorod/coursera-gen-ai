@@ -30,8 +30,6 @@ After applying attention weights, the output is processed through a fully-connec
 
 ### Lecture Summary: Transformer Architecture Overview 
 
-The lecture provides a comprehensive overview of the transformer architecture, originally designed for sequence-to-sequence tasks like translation. A simple example is used to illustrate how a French phrase is translated into English using a transformer model.
-
 1. **Tokenization**: The input words are tokenized using the same tokenizer that was used to train the network.
 2. **Encoder**: The tokens are fed into the encoder through the embedding layer and multi-headed attention layers. The output is a deep representation of the structure and meaning of the input sequence.
 3. **Decoder**: The encoded data is inserted into the decoder, which predicts the next token based on the context provided by the encoder. This loop continues until an end-of-sequence token is predicted.
@@ -47,6 +45,6 @@ The lecture also discusses different variations of the transformer architecture:
 
 ### Prompt Engineering
 
-The lecture emphasizes that while understanding the underlying architecture is beneficial, it's not necessary for interacting with transformer models. Instead, you'll be using natural language to create prompts, a process known as prompt engineering.
+Understanding the underlying architecture is beneficial, not necessary for interacting with transformer models. Instead, you'll be using natural language to create prompts, a process known as prompt engineering.
 
 In summary, this lecture serves as a high-level overview of transformer models, providing enough background to understand the differences between various models and read model documentation. More detailed exploration will follow in later parts of the course.
